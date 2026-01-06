@@ -1,0 +1,188 @@
+:root {
+  --font-title: 'Space Grotesk', system-ui, sans-serif;
+  --font-card: 'Archivo', system-ui, sans-serif;
+  
+   /* Backgrounds */
+  --bg-app: #0B0F1A;
+  --bg-card: #131A2A;
+  --bg-card-hover: #18213A;
+
+  /* Borders */
+  --border-subtle: #1F2937;
+
+  /* Text */
+  --text-primary: #E5E7EB;
+  --text-secondary: #9CA3AF;
+  --text-muted: #6B7280;
+
+  /* Primary */
+  --primary: #7C7CFF;
+  --primary-hover: #6366F1;
+  --primary-active: #4F46E5;
+
+  /* Success */
+  --success: #22C55E;
+  --success-hover: #16A34A;
+
+  /* Danger */
+  --danger: #F43F5E;
+  --danger-hover: #E11D48;
+
+  /* Accent */
+  --accent: #22D3EE;
+}
+
+
+h1,
+h2,
+h3,
+.page-title,
+.section-title {
+  font-family: var(--font-title);
+  letter-spacing: 0.02em;
+}
+
+.game-card {
+  font-family: var(--font-card);
+}
+
+.game-title {
+  font-family: var(--font-title);
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+  font-family: var(--font-card);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  font-family: var(--font-card);
+  font-size: 14px;
+  font-weight: 500;
+
+  padding: 10px 14px;
+  border-radius: 10px;
+
+  border: 1px solid transparent;
+
+  cursor: pointer;
+  user-select: none;
+
+  transition{
+    background: 0.2s ease;
+    color: 0.2s ease;
+    border-color: 0.2s ease;
+    box-shadow: 0.2s ease;
+    transform: 0.1s ease;
+  }
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+  box-shadow: 0 4px 10px rgba(124, 124, 255, 0.35);
+}
+
+@media (hover: hover) {
+  .btn-primary:hover {
+    background: var(--primary-hover);
+    box-shadow: 0 6px 14px rgba(124, 124, 255, 0.45);
+  }
+}
+
+.btn-primary:active {
+  transform: translateY(1px);
+}
+
+.btn-success {
+  background: var(--success);
+  color: white;
+  box-shadow: 0 4px 10px rgba(34, 197, 94, 0.35);
+}
+
+@media (hover: hover) {
+  .btn-success:hover {
+    background: var(--success-hover);
+    box-shadow: 0 6px 14px rgba(34, 197, 94, 0.45);
+  }
+}
+
+@media (hover: hover) {
+  .btn-success:hover {
+    background: var(--success-hover);
+  }
+}
+
+.btn-danger {
+  background: transparent;
+  color: var(--danger);
+  border-color: var(--danger);
+}
+
+@media (hover: hover) {
+  .btn-danger:hover {
+    background: var(--danger);
+    color: white;
+  }
+}
+
+.btn-secondary {
+  background: rgba(124, 124, 255, 0.1);
+  color: var(--primary);
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+button:hover {
+  filter: brightness(1.05);
+}
+
+.card {
+  padding: 2em;
+}
+
+#app {
+  max-width: 1280px;
+  margin-inline: auto;
+
+  padding-inline: clamp(1rem, 4vw, 2rem);
+  padding-block: clamp(1rem, 3vw, 2rem);
+  text-align: left;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

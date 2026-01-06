@@ -1,0 +1,14 @@
+:root{
+    --font-title: 'Space Grotesk', system-ui, sans-serif;
+    --font-card: 'Archivo', system-ui, sans-serif;
+}
+
+.game-card{
+    font-family: var(--font-card);
+}
+
+.game-title{
+    font-family: var(--font-title);
+    font-size: 24px;
+    line-height: 1.2;
+}

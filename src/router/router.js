@@ -3,8 +3,8 @@ import Home from "../views/Home.vue";
 import DeleteGame from "../views/DeleteGame.vue";
 
 const router = createRouter({
-    history: createWebHistory(),
-    routes: [
+  history: createWebHashHistory(),
+  routes: [
         {
             path: "/",
             name: "Home",
